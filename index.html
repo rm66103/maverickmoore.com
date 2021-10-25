@@ -47,8 +47,18 @@
     };
 </script>
 
-<pre id="resume">
-</pre>
+<style>
+    pre {
+        white-space:pre-wrap; word-wrap:break-word;
+    }
+</style>
+
+<body>
+    <div style="max-width:100%;">
+        <pre id="resume">
+        </pre>
+    </div>
+</body>
 
 <script>
     document.getElementById("resume").innerHTML = objectToString(resume);
