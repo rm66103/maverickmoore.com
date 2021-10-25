@@ -1,0 +1,57 @@
+<script>
+    var resume = {
+        "name": "Maverick Moore",
+        "profession": "Software Engineer",
+        "experience": [
+            {
+                "name": "SharpSpring",
+                "title": "Software Engineer",
+                "start_date": "Nov 2020",
+                "end_date": "Present",
+                "description": [
+                    "Deliver code regularly in agile environment",
+                    "Interview and train new developers.",
+                    "Integrate with 3rd party platforms into our ruby on rails application."
+                ]
+            },
+            {
+                "name": "NXTsoft",
+                "title": "Software Engineer",
+                "start_date": "Mar 2019",
+                "end_date": "Nov 2020",
+                "description": [
+                    "Build new features in an Agile environment based on user feedback.",
+                    "Refactor old code for Ruby on Rails SaaS product to reduce database queries and decrease page load times by as much as 73%.",
+                    "Integrate with 3rd party API's to connect data from disparate systems.",
+                    "Design, develop, and deploy Python / Django geo targeting marketing solution to attract high quality inbound leads in coordination with marketing efforts.",
+                    "Use web scraping and Python and JSON to collect information, process data and migrate between systems."
+                ]
+            },
+            {
+                "name": "Kinetic Ink",
+                "title": "Software Engineer",
+                "start_date": "Nov 2017",
+                "end_date": "Aug 2019",
+                "description": [
+                    "Implemented Python / Django Rest Framework API for handling requests to server resulting in scalable, efficient, and modular code.",
+                    "Developed mobile friendly React components for making requests to application server resulting in a responsive front-end client.",
+                    "Developer React components in accordance with design specifications from the UI/UX designer resulting in a usable and stylish branded user interface across all devices.",
+                    "Expanded platform capabilities through Progressive Web App for offline interactivity, increased SEO, and mobile-app like experience on mobile devices.",
+                    "Write automated test scripts to catch bugs early which resulted in faster development of new features and prevented code regressions.",
+                    "Manipulate JSON data to prepare for database and retrieve from database."
+                ]
+            }
+        ]
+    };
+</script>
+
+<pre id="resume">
+</pre>
+
+<script>
+    document.getElementById("resume").innerHTML = objectToString(resume);
+
+    function objectToString(obj) {
+        return JSON.stringify(obj, null, "\t");
+    }
+</script>
